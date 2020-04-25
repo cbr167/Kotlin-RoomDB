@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/noteRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|bottom"
+            android:baselineAlignBottom="true"
+            app:elevation="1dp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="@color/white"
+
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:layout_anchorGravity="bottom" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
